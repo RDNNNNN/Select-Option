@@ -1,22 +1,22 @@
-<!-- 設定為HTML5 -->
+<!-- 設定為 HTML5 -->
 <!DOCTYPE html>
 <!-- 語言為英文 -->
 <html lang="en">
   <head>
-    <!-- 編碼為UTF-8 -->
+    <!-- 編碼為 UTF-8 -->
     <meta charset="UTF-8" />
-    <!-- 設定視窗大小，使頁面對不同裝置 -->
+    <!-- 設定視窗大小, 使頁面對不同裝置 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- 設定頁面標題 -->
     <title>Select Option</title>
-    <!-- 匯入Tailwind CSS的CDN，以使用Tailwind的樣式 -->
+    <!-- 匯入 Tailwind CSS 的 CDN, 以使用 Tailwind 的樣式 -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- 匯入JavaScript檔案 -->
+    <!-- 匯入 JavaScript 檔案 -->
     <script src="app.js"></script>
   </head>
   <body>
-    <!-- 設定form提交的網址為/submit並使用POST方法 -->
-    <!-- 使用TailwindCSS，p-4設定padding間距，bg-gray-100設定背景顏色為灰色以及rounded-lg設置圓角跟shadow-md設定陰影，w-full設定寬度為全寬並且水平置中 -->
+    <!-- 設定 form 提交的網址為/submit並使用POST方法 -->
+    <!-- 使用 TailwindCSS, p-4 設定 padding 間距, bg-gray-100 設定背景顏色為灰色以及 rounded-lg 設置圓角跟 shadow-md 設定陰影, w-full 設定寬度為全寬並且水平置中 -->
     <form
       action="/submit"
       method="post"
@@ -29,7 +29,7 @@
         >請選擇項目：</label
       >
       <!-- 顯示已選標籤的元素 -->
-      <!-- 使用TailwindCSS設置flex布局，自動換行的標籤元素，內邊距和背景為白色，並設有灰色邊框 -->
+      <!-- 使用 TailwindCSS 設置 flex 布局，自動換行的標籤元素，內邊距和背景為白色，並設有灰色邊框 -->
       <div
         id="selectedTags"
         class="flex flex-wrap gap-2 p-2 mb-2 bg-white border border-gray-300 rounded-md"
@@ -38,7 +38,7 @@
       </div>
       <div class="relative">
         <!-- 下拉選項按鈕，用於控制下拉選單的顯示和隱藏 -->
-        <!-- 使用TailwindCSS設置按鈕的背景顏色為藍色，圓角及懸停時顏色變深等樣式 -->
+        <!-- 使用 TailwindCSS 設置按鈕的背景顏色為藍色，圓角及懸停時顏色變深等樣式 -->
         <button
           type="button"
           id="dropdownButton"
@@ -47,13 +47,13 @@
           ▼
         </button>
         <!-- 下拉選單選項的元素，預設為隱藏 -->
-        <!-- 使用TailwindCSS設置選項元素隱藏、絕對定位、圓角、陰影和邊框樣式 -->
+        <!-- 使用 TailwindCSS 設置選項元素隱藏、絕對定位、圓角、陰影和邊框樣式 -->
         <div
           id="optionsContainer"
           class="hidden absolute z-10 bg-white border border-gray-300 rounded-md shadow-md mt-2 p-2 w-full max-w-md"
         >
-          <!-- 每一個選項，使用label包住checkbox並設置選項樣式 -->
-          <!-- 設定flex佈局，items-center使子元素可以置中，gap-2設定間距p-2設定padding間距hover設定滑鼠移至上方會顯示灰色，設定滑鼠移至上面會顯示手指圖案，設定邊筐為圓角 -->
+          <!-- 每一個選項，使用 label 包住 checkbox 並設置選項樣式 -->
+          <!-- 設定 flex 佈局, items-center 使子元素可以置中, gap-2 設定間距 p-2 設定 padding 間距 hover 設定滑鼠移至上方會顯示灰色, 設定滑鼠移至上面會顯示手指圖案,設定邊框為圓角 -->
           <label
             class="flex items-center gap-2 p-2 hover:bg-gray-100 cursor-pointer rounded-md"
           >
@@ -102,8 +102,8 @@
           </label>
         </div>
       </div>
-      <!-- 提交按鈕，用於提交表單 -->
-      <!-- 使用TailwindCSS設置按鈕的樣式，mt-4設定margin上方間距，w-full設定寬度為全寬，bg-green-500設定背景顏色為綠色，rounded-md設定圓角，p-2設定padding間距，hover:bg-green-600設定滑鼠移至上方會變色-->
+      <!-- 提交按鈕, 用於提交表單 -->
+      <!-- 使用 TailwindCSS 設置按鈕的樣式, mt-4 設定 margin 上方間距, w-full 設定寬度為全寬, bg-green-500 設定背景顏色為綠色, rounded-md 設定圓角, p-2 設定 padding 間距, hover:bg-green-600 設定滑鼠移至上方會變色-->
       <button
         type="submit"
         class="mt-4 w-full bg-green-500 text-white p-2 rounded-md hover:bg-green-600"
